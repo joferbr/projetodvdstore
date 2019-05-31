@@ -10,10 +10,7 @@ import javax.faces.model.ListDataModel;
 import javax.inject.Named;
 import model.Category;
 
-/**
- *
- * @author NCCallegari
- */
+
 @Named(value = "categoryController")
 @SessionScoped
 public class CategoryController implements Serializable {
@@ -30,16 +27,12 @@ public class CategoryController implements Serializable {
 
     public Category getCategory()
     {
-        //return this.category;
         if (category == null){
             category = new Category();
         }
           return category;
     }
     
-    /**
-     * Creates a new instance of FilmController
-     */
     public CategoryController() {
         helper = new CategoryHelper();
 
@@ -52,13 +45,6 @@ public class CategoryController implements Serializable {
         return categoryModel;
     }
     
-   // public Category getCategory() {
-   //     if (category == null) {
-   //         category = new Category();
-   //     }
-  //      return category;
-  //  }
-
     public void setCategory(Category category) {
         this.category = category;
     }
@@ -98,11 +84,5 @@ public class CategoryController implements Serializable {
         }
         
     }
-
-   // public DataModel getCategoryy() {
-   // if (categoryFilm == null) {
-   // categoryFilm = new ListDataModel(helper.getCategory());
-   // }
-   // return categoryFilm;
-  //  }    
+   
 }

@@ -63,9 +63,7 @@ public class CategoryHelper {
         } catch (RuntimeException ex) {
             if (tx != null) {
                 tx.rollback();
-
             }
-           // throw ex;
         } finally {
             closeSession();
 
