@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+    
+    <ui:composition template="./template.xhtml">
+
+        <ui:define name="body">
+            
+            <f:metadata>
+                
+                <f:event listener="#{categoryController.carregardados()}" type="preRenderView"/>
+                <f:viewParam name="linhacorrente" value="#{categoryController.codigo}"/>
+                
+            </f:metadata>
+            
+            <h:form>
+
+                <h:outputLabel value="CategoryId"/>
+
+                <h:inputText value="#{categoryController.category.categoryId}"/>
+                    
+                <h:inputText value="#{categoryController.category.name}"/>
+
+               
+
+                <h:commandButton value="Excluir" actionListener="#{categoryController.delete()}"/>
+                <h:commandButton value="Atualizar" actionListener="#{categoryController.atualizar()}"/>
+
+
+                <br/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+</html>
