@@ -11,11 +11,7 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
-/**
- *
- * @author NCCallegari
- */
-// Criação de uma classe chamada CategoryHelper
+
 public class CategoryHelper {
 
     Session session = null; //Se a sessão não estiver aberta
