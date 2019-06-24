@@ -41,10 +41,19 @@ Contributor(s):
 -->
 <hibernate-reverse-engineering>
   <schema-selection match-catalog="dvdrental" match-schema="public"/>
-  <table-filter match-name="category"/>
-  <table-filter match-name="language"/>
-  <table-filter match-name="actor"/>
-  <table-filter match-name="film"/>
-  <table-filter match-name="film_category"/>
   <table-filter match-name="film_actor"/>
+  <table-filter match-name="staff"/>
+  <table-filter match-name="address"/>
+  <table-filter match-name="payment"/>
+  <table-filter match-name="store"/>
+  <table-filter match-name="language"/>
+  <table-filter match-name="rental"/>
+  <table-filter match-name="customer"/>
+  <table-filter match-name="category"/>
+  <table-filter match-name="country"/>
+  <table-filter match-name="city"/>
+  <table-filter match-name="film_category"/>
+  <table-filter match-name="film"/>
+  <table-filter match-name="inventory"/>
+  <table-filter match-name="actor"/>
 </hibernate-reverse-engineering>

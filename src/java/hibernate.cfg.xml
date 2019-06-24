@@ -50,11 +50,20 @@ Contributor(s):
     <property name="hibernate.current_session_context_class">thread</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
-    <mapping resource="model/Film.hbm.xml"/>
-    <mapping resource="model/Language.hbm.xml"/>
+    <mapping resource="model/Store.hbm.xml"/>
     <mapping resource="model/Actor.hbm.xml"/>
-    <mapping resource="model/Category.hbm.xml"/>
     <mapping resource="model/FilmActor.hbm.xml"/>
+    <mapping resource="model/Category.hbm.xml"/>
+    <mapping resource="model/Address.hbm.xml"/>
+    <mapping resource="model/Film.hbm.xml"/>
+    <mapping resource="model/Country.hbm.xml"/>
+    <mapping resource="model/Customer.hbm.xml"/>
+    <mapping resource="model/Language.hbm.xml"/>
     <mapping resource="model/FilmCategory.hbm.xml"/>
+    <mapping resource="model/Rental.hbm.xml"/>
+    <mapping resource="model/Inventory.hbm.xml"/>
+    <mapping resource="model/Payment.hbm.xml"/>
+    <mapping resource="model/City.hbm.xml"/>
+    <mapping resource="model/Staff.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
